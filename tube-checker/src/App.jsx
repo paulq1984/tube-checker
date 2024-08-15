@@ -5,27 +5,40 @@ import LineList from './Componets/LineList';
 const URL = `https://api.tfl.gov.uk/Line/Mode/tube/Status?app_id=b95dd024192d47ceb03073d1d37e1425&app_key=9ff999ae04714df1b74c11d76857a798`;
 
 function App() {
-  const [lines, setLines] = useState([
-    { name: 'Bakerloo', id: 1 },
-    { name: 'Centeral', id: 2 },
-  ]);
+  const [lines, setLines] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(URL);
-      response.json().then((json) => {
-        console.log(json);
+    fetch(URL)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setLines(data);
+        setIsLoading(false);
       });
-    };
-    fetchData();
   }, []);
 
   return (
     <>
       <div>
-        <h1>Tube-Checker</h1>
-        <i className="fa-solid fa-archway"></i>
-        <LineList lines={lines} />
+        <div className="header">
+          <h1>
+            <span>
+              <i className="fa-solid fa-archway"></i>
+            </span>
+            Tube-Checker
+            <span>
+              <i className="fa-solid fa-archway"></i>
+            </span>
+          </h1>
+        </div>
+
+        <section>
+          {isLoading && <div>Loading...</div>}
+          {lines && <LineList lines={lines} />}
+        </section>
       </div>
     </>
   );

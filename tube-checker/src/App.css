@@ -1,5 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 * {
-  font-family: "Hammersmith One";
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+:root {
+--bakerloo-color:#B36305;
+--central-color: #E32017;
+--circle-color: #FFD300;
+--district-color: #00782A;
+--hammersmith-color: #F3A9BB;
+--jubilee-color: #A0A5A9;
+--metropolitan-color: #9B0056;
+--northern-color: #000000;
+--piccadilly-color: #003688;
+--victoria-color: #0098D4;
+--waterloo-color: #95CDBA;
+--text-color: #fff;
+  --text-color-2: #ffffffe1;
+}
+
+body {
+  background-color: rgb(50, 62, 72);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  z-index: 999;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bakerloo, .central, .circle, .district, .hammersmith-city, .jubilee, .metropolitan, .northern, .piccadilly, .victoria, .waterloo-city {
+  color: var(--text-color);
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 8%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.bakerloo {
+background-color: var(--bakerloo-color);
+}
+.central {
+background-color: var(--central-color);
+}
+.circle {
+background-color: var(--circle-color);
+}
+.district {
+background-color: var(--district-color);
+}
+.hammersmith-city {
+background-color: var(--hammersmith-color);
+}
+.jubilee {
+background-color: var(--jubilee-color);
+}
+.metropolitan {
+background-color: var(--metropolitan-color);
+}
+.northern {
+background-color: var(--northern-color);
+}
+.piccadilly {
+background-color: var(--piccadilly-color);
+}
+.victoria {
+background-color: var(--victoria-color);
+}
+.waterloo-city {
+background-color: var(--waterloo-color);
 }
