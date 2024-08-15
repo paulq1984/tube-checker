@@ -25,6 +25,7 @@ function App() {
       <div>
         <div className="header">
           <h1>Tube Checker</h1>
+          <i className="fa-solid fa-train-subway"></i>
         </div>
 
         <section>
