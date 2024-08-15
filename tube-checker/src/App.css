@@ -7,21 +7,23 @@
     list-style: none;
     text-decoration: none;
   font-family: "Hammersmith One", sans-serif;
+  color: #fff;
 }
 
 :root {
---bakerloo-color:#B36305;
---central-color: #E32017;
---circle-color: #FFD300;
---district-color: #00782A;
---hammersmith-color: #F3A9BB;
---jubilee-color: #A0A5A9;
---metropolitan-color: #9B0056;
---northern-color: #000000;
---piccadilly-color: #003688;
---victoria-color: #0098D4;
---waterloo-color: #95CDBA;
---text-color: #fff;
+--bakerloo-color: rgb(166, 90, 42);
+--central-color: rgb(225, 37, 27);
+--circle-color: rgb(255, 205, 0);
+--district-color: rgb(0, 121, 52);
+--hammersmith-color: rgb(236, 155, 173);
+--jubilee-color: rgb(123, 134, 140);
+--metropolitan-color: rgb(135, 15, 84);
+--northern-color: rgb(0, 0, 0);
+--piccadilly-color: rgb(0, 15, 159);
+--victoria-color: rgb(0, 160, 223);
+--waterloo-color: rgb(107, 205, 178);
+--undergound-color: rgb(0, 15, 159);
+--text-color: rgb(255, 255, 255);
   --text-color-2: #ffffffe1;
 }
 
@@ -45,14 +47,7 @@ section {
 
 .bakerloo, .central, .circle, .district, .hammersmith-city, .jubilee, .metropolitan, .northern, .piccadilly, .victoria, .waterloo-city {
   color: var(--text-color);
-  width: 1500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 80px 8%;
-  border-radius: 12px;
-  margin-bottom: 25px;
+
 }
 
 .bakerloo {

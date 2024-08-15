@@ -24,15 +24,7 @@ function App() {
     <>
       <div>
         <div className="header">
-          <h1>
-            <span>
-              <i className="fa-solid fa-archway"></i>
-            </span>
-            Tube-Checker
-            <span>
-              <i className="fa-solid fa-archway"></i>
-            </span>
-          </h1>
+          <h1>Tube Checker</h1>
         </div>
 
         <section>
