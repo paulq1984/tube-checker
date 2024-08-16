@@ -23,10 +23,14 @@ function App() {
   return (
     <>
       <div>
-        <div className="header">
-          <h1>Tube Checker</h1>
-          <i className="fa-solid fa-train-subway"></i>
-        </div>
+        <nav className="navbar">
+          <div className="container">
+            <span className="navbar-brand">
+              <i className="fa-solid fa-train-subway"></i>
+            </span>
+            <h1>Tube Checker</h1>
+          </div>
+        </nav>
 
         <section>
           {isLoading && <div>Loading...</div>}

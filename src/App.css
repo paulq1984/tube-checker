@@ -2,10 +2,10 @@
 
 * {
   margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   font-family: "Hammersmith One", sans-serif;
   color: #fff;
 }
@@ -24,61 +24,68 @@
 --waterloo-color: rgb(107, 205, 178);
 --undergound-color: rgb(0, 15, 159);
 --text-color: rgb(255, 255, 255);
-  --text-color-2: #ffffffe1;
+--text-color-2: #ffffffe1;
 }
 
 body {
   background-color: rgb(50, 62, 72);
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
-  z-index: 999;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bakerloo, .central, .circle, .district, .hammersmith-city, .jubilee, .metropolitan, .northern, .piccadilly, .victoria, .waterloo-city {
+#bakerloo, #central, #circle, #district, #hammersmith-city, #jubilee, #metropolitan, #northern, #piccadilly, #victoria, #waterloo-city {
   color: var(--text-color);
+  padding: 20px
 }
 
-.bakerloo {
+#bakerloo i,
+#central i,
+#circle i,
+#district i,
+#hammersmith-city i,
+#jubilee i,
+#metropolitan i,
+#northern i,
+#piccadilly i,
+#victoria i,
+#waterloo-city i {
+  font-size: 30px;
+  padding: 8px
+}
+
+#bakerloo {
 background-color: var(--bakerloo-color);
 }
-.central {
+
+#central {
 background-color: var(--central-color);
 }
-.circle {
+#circle {
 background-color: var(--circle-color);
 }
-.district {
+#district {
 background-color: var(--district-color);
 }
-.hammersmith-city {
+#hammersmith-city {
 background-color: var(--hammersmith-color);
 }
-.jubilee {
+#jubilee {
 background-color: var(--jubilee-color);
 }
-.metropolitan {
+#metropolitan {
 background-color: var(--metropolitan-color);
 }
-.northern {
+#northern {
 background-color: var(--northern-color);
 }
-.piccadilly {
+#piccadilly {
 background-color: var(--piccadilly-color);
 }
-.victoria {
+#victoria {
 background-color: var(--victoria-color);
 }
-.waterloo-city {
+#waterloo-city {
 background-color: var(--waterloo-color);
+}
+
+.reason {
+  margin-top: 10px;
 }
