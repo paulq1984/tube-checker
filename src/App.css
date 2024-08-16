@@ -48,7 +48,9 @@ body {
 #victoria i,
 #waterloo-city i {
   font-size: 30px;
-  padding: 8px
+  padding: 8px;
+  margin: 10px;
+  text-align: right;
 }
 
 #bakerloo {

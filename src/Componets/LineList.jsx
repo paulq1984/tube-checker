@@ -1,12 +1,12 @@
 const LineList = ({ lines }) => {
   return (
-    <div className="container list-group">
+    <div className="container-fluid">
       {lines.map((line) => (
         <div className="row" id={line.id} key={line.id}>
-          <div className="col-11">
+          <div className="col-8">
             <h2>{line.name}</h2>
           </div>
-          <div className="col-1">
+          <div className="col-4">
             {line.lineStatuses[0].statusSeverity == 10 ? (
               <span className="badge text-bg-success">
                 <i className="fa-solid fa-circle-check"></i>
