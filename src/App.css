@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Hammersmith One", sans-serif;
-  color: #fff;
+
 }
 
 :root {
@@ -16,7 +16,6 @@
 --circle-color: rgb(255, 205, 0);
 --district-color: rgb(0, 121, 52);
 --hammersmith-color: rgb(236, 155, 173);
---jubilee-color: rgb(123, 134, 140);
 --metropolitan-color: rgb(135, 15, 84);
 --northern-color: rgb(0, 0, 0);
 --piccadilly-color: rgb(0, 15, 159);
@@ -25,15 +24,6 @@
 --undergound-color: rgb(0, 15, 159);
 --text-color: rgb(255, 255, 255);
 --text-color-2: #ffffffe1;
-}
-
-body {
-  background-color: rgb(50, 62, 72);
-}
-
-#bakerloo, #central, #circle, #district, #hammersmith-city, #jubilee, #metropolitan, #northern, #piccadilly, #victoria, #waterloo-city {
-  color: var(--text-color);
-  padding: 20px
 }
 
 #bakerloo i,
@@ -53,41 +43,37 @@ body {
   text-align: right;
 }
 
-#bakerloo {
-background-color: var(--bakerloo-color);
+.bakerloo {
+color: var(--bakerloo-color);
 }
 
-#central {
-background-color: var(--central-color);
+.central {
+color: var(--central-color);
 }
-#circle {
-background-color: var(--circle-color);
+.circle {
+color: var(--circle-color);
 }
-#district {
-background-color: var(--district-color);
+.district {
+color: var(--district-color);
 }
-#hammersmith-city {
-background-color: var(--hammersmith-color);
+.hammersmith-city {
+color: var(--hammersmith-color);
 }
-#jubilee {
-background-color: var(--jubilee-color);
+.jubilee {
+color: var(--jubilee-color);
 }
-#metropolitan {
-background-color: var(--metropolitan-color);
+.metropolitan {
+color: var(--metropolitan-color);
 }
-#northern {
-background-color: var(--northern-color);
+.northern {
+color: var(--northern-color);
 }
-#piccadilly {
-background-color: var(--piccadilly-color);
+.piccadilly {
+color: var(--piccadilly-color);
 }
-#victoria {
-background-color: var(--victoria-color);
+.victoria {
+color: var(--victoria-color);
 }
-#waterloo-city {
-background-color: var(--waterloo-color);
-}
-
-.reason {
-  margin-top: 10px;
+.waterloo-city {
+color: var(--waterloo-color);
 }

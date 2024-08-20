@@ -22,20 +22,19 @@ function App() {
 
   return (
     <>
-      <div>
-        <nav className="navbar">
-          <div className="container">
-            <span className="navbar-brand">
-              <i className="fa-solid fa-train-subway"></i>
-            </span>
-            <h1>Tube Checker</h1>
+      <div className="navbar bg-base-100">
+        <div className="flex-1">
+          <a className="btn btn-ghost text-xl">Tube-Checker</a>
+        </div>
+        <div className="flex-none gap-2">
+          <div className="btn btn-ghost btn-circle text-xl">
+            <i className="fa-solid fa-train-subway"></i>
           </div>
-        </nav>
-
-        <section>
-          {isLoading && <div>Loading...</div>}
-          {lines && <LineList lines={lines} />}
-        </section>
+        </div>
+      </div>
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-3">
+        {isLoading && <div>Loading...</div>}
+        {lines && <LineList lines={lines} />}
       </div>
     </>
   );

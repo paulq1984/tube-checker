@@ -1,29 +1,33 @@
 const LineList = ({ lines }) => {
   return (
-    <div className="container-fluid">
+    <>
       {lines.map((line) => (
-        <div className="row" id={line.id} key={line.id}>
-          <div className="col-8">
-            <h2>{line.name}</h2>
+        <div
+          key={line.id}
+          className="card lg:card-side bg-base-100 shadow-xl"
+        >
+          <div className="card-body">
+            <h2 className="card-title">{line.name}</h2>
+            <div className="card-actions justify-end">
+              <p>{line.lineStatuses[0].statusSeverityDescription}</p>
+              {line.lineStatuses[0].statusSeverity == 10 ? (
+                <span className="badge badge-success gap-2">
+                  <i className="fa-solid fa-circle-check"></i>
+                </span>
+              ) : (
+                <span className="badge badge-warning gap-2">
+                  <i className="fa-solid fa-triangle-exclamation"></i>
+                </span>
+              )}
+            </div>
           </div>
-          <div className="col-4">
-            {line.lineStatuses[0].statusSeverity == 10 ? (
-              <span className="badge text-bg-success">
-                <i className="fa-solid fa-circle-check"></i>
-              </span>
-            ) : (
-              <span className="badge text-bg-warning">
-                <i className="fa-solid fa-triangle-exclamation"></i>
-              </span>
-            )}
-          </div>
-          <p className="reason">
+          {/* <p>
             {line.lineStatuses[0].reason &&
               line.lineStatuses[0].reason}
-          </p>
+          </p> */}
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
