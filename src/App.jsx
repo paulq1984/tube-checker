@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="p-8 space-y-4">
       <div className="navbar bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">Tube-Checker</a>
@@ -32,11 +32,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
+      <div className="grid gap-4 grid-cols-1">
         {isLoading && <div>Loading...</div>}
         {lines && <LineList lines={lines} />}
       </div>
-    </>
+    </div>
   );
 }
 

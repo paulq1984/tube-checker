@@ -16,20 +16,22 @@ const LineList = ({ lines }) => {
                   <i className="fa-solid fa-circle-check"></i>
                 </span>
               ) : (
-                <span
-                  className="badge badge-warning gap-2"
-                  id={line.id}
-                >
+                <span className="badge badge-warning" id={line.id}>
                   <i className="fa-solid fa-triangle-exclamation"></i>
                 </span>
               )}
             </div>
           </div>
-          {line.lineStatuses[0].reason && (
-            <div className="collapse-content">
-              {line.lineStatuses[0].reason}
-            </div>
-          )}
+          <div className="collapse-content">
+            {line.lineStatuses
+              .filter((status) => status.reason)
+              .map((status, index) => (
+                <div className="alert alert-warning mb-4">
+                  <i className="fa-solid fa-triangle-exclamation px-8"></i>
+                  <span>{status.reason}</span>
+                </div>
+              ))}
+          </div>
         </div>
       ))}
     </>
