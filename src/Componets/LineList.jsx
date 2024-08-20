@@ -4,9 +4,10 @@ const LineList = ({ lines }) => {
       {lines.map((line) => (
         <div
           key={line.id}
-          className="card lg:card-side bg-base-100 shadow-xl"
+          className="card lg:card-side bg-base-100 shadow-xl collapse"
         >
-          <div className="card-body">
+          <input type="radio" name="my-accordion-1" />
+          <div className="card-body collapse-title">
             <h2 className={`card-title ${line.id}`}>{line.name}</h2>
             <div className="card-actions justify-end">
               <p>{line.lineStatuses[0].statusSeverityDescription}</p>
@@ -15,16 +16,20 @@ const LineList = ({ lines }) => {
                   <i className="fa-solid fa-circle-check"></i>
                 </span>
               ) : (
-                <span className="badge badge-warning gap-2">
+                <span
+                  className="badge badge-warning gap-2"
+                  id={line.id}
+                >
                   <i className="fa-solid fa-triangle-exclamation"></i>
                 </span>
               )}
             </div>
           </div>
-          {/* <p>
-            {line.lineStatuses[0].reason &&
-              line.lineStatuses[0].reason}
-          </p> */}
+          {line.lineStatuses[0].reason && (
+            <div className="collapse-content">
+              {line.lineStatuses[0].reason}
+            </div>
+          )}
         </div>
       ))}
     </>

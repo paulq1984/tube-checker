@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Hammersmith One", sans-serif;
 
-}
 
 :root {
 --bakerloo-color: rgb(166, 90, 42);
@@ -24,23 +15,6 @@
 --undergound-color: rgb(0, 15, 159);
 --text-color: rgb(255, 255, 255);
 --text-color-2: #ffffffe1;
-}
-
-#bakerloo i,
-#central i,
-#circle i,
-#district i,
-#hammersmith-city i,
-#jubilee i,
-#metropolitan i,
-#northern i,
-#piccadilly i,
-#victoria i,
-#waterloo-city i {
-  font-size: 20px;
-  padding: 8px;
-  margin: 10px;
-  text-align: right;
 }
 
 .bakerloo {
