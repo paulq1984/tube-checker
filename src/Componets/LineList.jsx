@@ -7,7 +7,7 @@ const LineList = ({ lines }) => {
           className="card lg:card-side bg-base-100 shadow-xl"
         >
           <div className="card-body">
-            <h2 className="card-title">{line.name}</h2>
+            <h2 className={`card-title ${line.id}`}>{line.name}</h2>
             <div className="card-actions justify-end">
               <p>{line.lineStatuses[0].statusSeverityDescription}</p>
               {line.lineStatuses[0].statusSeverity == 10 ? (
